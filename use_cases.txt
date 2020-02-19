@@ -10,7 +10,7 @@ Given that MASQUE and the upcoming BoF will be successful insofar as it addresse
 use cases, I think it'd be useful to discuss these application use cases in more detail 
 before Vancouver. To that end, let's use this time before the meeting to discuss them! 
 
-I'd like to ask interested parties to please surface use cases they know of (and care about!). 
+I'd like to ask interested parties to please surface use cases they know of (and care about). 
 
 Thanks!
 Chris
