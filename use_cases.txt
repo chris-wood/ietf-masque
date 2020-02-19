@@ -1,0 +1,25 @@
+Subject: MASQUE Use Cases
+
+~~~
+
+The core MASQUE protocol [1] describes a simple negotiation mechanism for various 
+applications. However, it omits use cases for these applications. MASQUE obfuscation
+in support of a "hidden VPN" service is one use case [2]. Tunneling QUIC is another [3].
+Given that MASQUE will be useful insofar as it addresses important use cases, I think 
+it'd be useful to discuss these application use cases in more detail before Vancouver.
+
+Let's start with QUIC proxying. This seems like a farily non-controversial use case with
+numerous benefits: client IP address hiding, multiplexed stream and datagram support, 
+and the opportunity to extend this arbitrarily for multi-hop circuits (Tor is doing 
+similar exporations [4]). These seem to differentiate MASQUE from prior protocols, such 
+as HTTP Connect and TURN. Perhaps we can expand on these differences in [1]? Or, better 
+yet, could we pull this out into a separate document that builds on [1]? 
+
+Service obfuscation and PEP support are other use cases folks have expressed interest in.
+Given that MASQUE is sufficiently extensible, it supports these as extension, and they 
+need not be a primary use case.
+
+[1] https://tools.ietf.org/html/draft-schinazi-masque-02
+[2] https://tools.ietf.org/html/draft-schinazi-masque-obfuscation-00
+[3] https://tools.ietf.org/html/draft-kuehlewind-quic-substrate-02
+[4] https://lists.torproject.org/pipermail/tor-dev/2018-March/013026.html
