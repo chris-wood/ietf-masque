@@ -1,36 +1,7 @@
-Many network topologies lead to situations where transport protocol proxying 
-is beneficial. For example, proxying enables endpoints to communicate when 
-end-to-end connectivity is not possible and can apply additional encryption 
-where desirable (such as a VPN). Proxying technologies such as SOCKS and 
-HTTP(s) Connect exist, albeit with their own shortcomings. For example, SOCKS 
-signalling is not encrypted and HTTP Connect is limited to TCP.
+Many network topologies lead to situations where transport protocol proxying is beneficial. For example, proxying enables endpoints to communicate when end-to-end connectivity is not possible and can apply additional encryption where desirable (such as a VPN). Proxying can also improve client privacy, e.g., by hiding a client's IP address from a target server.
 
-In contrast, QUIC is a viable candidate protocol for proxying arbitrary traffic, 
-as it provides secure connectivity, multiplexed streams, and connection migration.
-Further, HTTP/3 supports an established request/response semantic that can be used 
-to set up and configure services.
+Proxying technologies such as SOCKS and HTTP(S) CONNECT exist, albeit with their own shortcomings. For example, SOCKS signalling is not encrypted and HTTP CONNECT is currently limited to TCP. In contrast, HTTP/3 is a viable candidate protocol for proxying arbitrary traffic, as it provides secure connectivity, multiplexed streams, and migration for a single connection while taking advantage of a unified congestion controller. HTTP/3 datagrams provide for unreliable data transmission, which enables transporting UDP and other unreliable flows via a proxy without introducing potentially redundant or unnecessary recovery mechanisms. Further, HTTP/3 supports an established request/response semantic that can set up and configure flows for different services.
 
-Using QUIC as a proxying technology allows for proxying of both reliable stream (TCP) 
-and unreliable datagram (UDP) flows. For stream flows, QUIC streams provide reliable 
-in-order delivery across the client-proxy link. QUIC datagrams provide for unreliable 
-data transmission, which allows for transporting UDP and other unreliable flows via 
-a proxy without introducing potentially redundant or unnecessary recovery mechanisms. 
-In addition, QUIC can carry both types of flows over the same connection while 
-taking advantage of a unified congestion controller.
+The primary goal of this working group is to develop mechanisms that allow configuring and concurrently running multiple proxied stream- and datagram-based flows inside a HTTP/3 connection. The group will specify an HTTP-based signaling protocol for creating and configuring each service flow. The group will first focus on a limited set of client-initiated services such as IP, UDP, and TCP proxying. Specifying proxy server discovery mechanisms is out of scope for the group. However, the group may specify techniques for identifying proxy servers to aid future discovery mechanisms.
 
-The primary goal of this working group is to develop MASQUE (Multiplexed Application 
-Substrate over QUIC Encryption), a framework that allows configuring and concurrently 
-running multiple proxied stream- and datagram-based flows inside a QUIC connection. 
-The MASQUE framework will specify a signaling protocol between client endpoints and
-MASQUE servers for negotiating proxy services and corresponding parameters. The group 
-will also specify support for an initial set of client-initiated services such as 
-HTTP, QUIC, and IP proxying that MASQUE servers support. The group may subsequently 
-recharter to consider additional services or applications.
-
-Proxy services that extend the signaling of the base MASQUE protocol can be adopted 
-by the group by creating a new milestone with AD review. Specifying MASQUE server 
-discovery mechanisms is out of scope for the group.
-
-If MASQUE requires any extensions to existing protocols, the group will coordinate 
-closely with the respective group responsible for maintaining that protocol, such 
-as the HTTPBIS, QUIC, or TLS working groups.
+The group will coordinate closely with other working groups responsible for maintaining relevant protocol extensions, such as HTTPBIS, QUIC, or TLS.
