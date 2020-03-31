@@ -64,7 +64,7 @@ Mirja:
 
     MASQUE server can provide extended services, such as (for example) doing proxied DNS resolution.
 
-    Related work is draft-piraux-quic-tunnel. That's a multihoming solution in which there is a concentrator aggregating traffic. A video presenting it in more details is available at https://youtu.be/MYogYjp57Fw.
+    Related work is draft-piraux-quic-tunnel. That's a multihoming solution in which there is a concentrator aggregating traffic. 
 
 Chairs:
     Another related piece of work is QBONE (QUIC-based Overlay Network Environment)
