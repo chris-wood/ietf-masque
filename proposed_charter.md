@@ -4,6 +4,8 @@ Proxying technologies such as SOCKS and HTTP(S) CONNECT exist, albeit with their
 
 The primary goal of this working group is to develop mechanisms that allow configuring and concurrently running multiple proxied stream- and datagram-based flows inside a HTTP/3 connection. The group will specify HTTP or HTTP/3 extensions to enable this functionality within an HTTP/3 connection. The group will focus on a limited set of client-initiated services: (1) UDP CONNECT and (2) IP proxying. Specifying proxy server discovery mechanisms is out of scope for the group. However, the group may specify techniques for identifying proxy servers to aid future discovery mechanisms.
 
+Support for UDP and IP multicast use cases is out of scope, but the working group is encouraged to make the mechanisms extensible for multicast, if practicable.
+
 The working group will consider the implications of tunneling congestion-controlled protocols over QUIC and may issue recommendations accordingly. New congestion control algorithms are out of scope.
 
-The group will coordinate closely with other working groups responsible for maintaining relevant protocol extensions, such as HTTPBIS, QUIC, or TLS.
+The group will coordinate closely with other working groups responsible for maintaining relevant protocol extensions, such as HTTPBIS, QUIC, or TLS. It will also coordinate closely with ICCRG on congestion control considerations.
