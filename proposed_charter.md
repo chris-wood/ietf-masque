@@ -21,11 +21,13 @@ configuring and concurrently running multiple proxied stream- and datagram-based
 flows inside a HTTP/3 connection. The group will specify HTTP or HTTP/3
 extensions to enable this functionality within an HTTP/3 connection. The group
 will focus on a limited set of client-initiated services: (1) UDP CONNECT and
-(2) IP proxying. Multicast UDP and multicast IP support is out of scope.
-However, the group may specify extension points that would enable future work on
-multicast. Specifying proxy server discovery mechanisms is also out of scope.
-However, the group may specify techniques for identifying proxy servers to aid
-future discovery mechanisms.
+(2) IP proxying.
+
+Multicast UDP and multicast IP support is out of scope. However, the group may
+specify extension points that would enable future work on multicast. Specifying
+proxy server discovery mechanisms is also out of scope, but the group may
+specify techniques for identifying proxy servers to aid future discovery
+mechanisms.
 
 The working group will consider the implications of tunneling protocols with
 congestion control and loss recovery over MASQUE, and may issue recommendations
