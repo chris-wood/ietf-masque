@@ -23,8 +23,8 @@ extensions to enable this functionality. The group will focus on a limited set
 of client-initiated services: (1) UDP CONNECT and (2) IP proxying.
 
 The working group will first deliver a protcol solution for UDP CONNECT and a
-requirements document for IP proxying. Once complete, it will focus on a
-protocol solution for IP proxying.
+requirements document for IP proxying. Once both are complete, the working group
+will focus on a protocol solution for IP proxying.
 
 The working group will also consider fallback to versions of HTTP that operate
 over TCP, as resilience to blocking of UDP or HTTP/3 is desired.
