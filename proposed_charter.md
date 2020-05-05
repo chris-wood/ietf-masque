@@ -22,7 +22,7 @@ flows inside an HTTP connection. The group will specify HTTP and/or HTTP/3
 extensions to enable this functionality. The group will focus on a limited set
 of client-initiated services: (1) UDP CONNECT and (2) IP proxying. 
 Server-initiated services are out of scope. The working group will first deliver 
-a protcol solution for UDP CONNECT and a requirements document for IP proxying. 
+a protocol solution for UDP CONNECT and a requirements document for IP proxying. 
 Once both are complete, the working group will focus on a protocol solution for 
 IP proxying.
 
