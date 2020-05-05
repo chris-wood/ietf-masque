@@ -22,6 +22,9 @@ flows inside a HTTP connection. The group will specify HTTP and/or HTTP/3
 extensions to enable this functionality. The group will focus on a limited set
 of client-initiated services: (1) UDP CONNECT and (2) IP proxying.
 
+The working group will also consider fallback to versions of HTTP that operate
+over TCP, as resilience to blocking of UDP or HTTP/3 is desired.
+
 Multicast UDP and multicast IP support is out of scope. However, the group may
 specify extension points that would enable future work on multicast. Specifying
 proxy server discovery mechanisms is also out of scope, but the group may
