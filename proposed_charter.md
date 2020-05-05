@@ -13,7 +13,7 @@ advantage of a unified congestion controller. An HTTP/3 datagram construct built
 on top of QUIC datagram frames would provide for unreliable data transmission
 and enable transporting UDP and other unreliable flows via a proxy. Moreover, it
 would not introduce potentially redundant or unnecessary recovery mechanisms.
-Lastly, HTTP/3 supports an established request/response semantic that can set up
+Lastly, HTTP supports an established request/response semantic that can set up
 and configure flows for different services.
 
 The primary goal of this working group is to develop mechanisms that allow
@@ -24,6 +24,8 @@ of client-initiated services: (1) UDP CONNECT and (2) IP proxying.
 
 The working group will also consider fallback to versions of HTTP that operate
 over TCP, as resilience to blocking of UDP or HTTP/3 is desired.
+
+Server-initiated services are out of scope.
 
 Multicast UDP and multicast IP support is out of scope. However, the group may
 specify extension points that would enable future work on multicast. Specifying
