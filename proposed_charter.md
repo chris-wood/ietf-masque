@@ -20,27 +20,23 @@ The primary goal of this working group is to develop mechanisms that allow
 configuring and concurrently running multiple proxied stream- and datagram-based
 flows inside an HTTP connection. The group will specify HTTP and/or HTTP/3
 extensions to enable this functionality. The group will focus on a limited set
-of client-initiated services: (1) UDP CONNECT and (2) IP proxying.
+of client-initiated services: (1) UDP CONNECT and (2) IP proxying. 
+Server-initiated services are out of scope. The working group will first deliver 
+a protcol solution for UDP CONNECT and a requirements document for IP proxying. 
+Once both are complete, the working group will focus on a protocol solution for 
+IP proxying.
 
-The working group will first deliver a protcol solution for UDP CONNECT and a
-requirements document for IP proxying. Once both are complete, the working group
-will focus on a protocol solution for IP proxying.
+The working group will consider fallback to versions of HTTP that operate over 
+TCP as a mitigation to UDP or HTTP/3 blocking. Moreover, the working group will 
+consider implications of tunneling protocols with congestion control and loss 
+recovery over MASQUE, and may issue recommendations accordingly. New congestion 
+control and loss recovery algorithms are out of scope.
 
-The working group will also consider fallback to versions of HTTP that operate
-over TCP, as resilience to blocking of UDP or HTTP/3 is desired.
-
-Server-initiated services are out of scope.
-
-Multicast UDP and multicast IP support is out of scope. However, the group may
+Multicast UDP and multicast IP support are out of scope. However, the group may
 specify extension points that would enable future work on multicast. Specifying
 proxy server discovery mechanisms is also out of scope, but the group may
 specify techniques for identifying proxy servers to aid future discovery
 mechanisms.
-
-The working group will consider the implications of tunneling protocols with
-congestion control and loss recovery over MASQUE, and may issue recommendations
-accordingly. New congestion control and loss recovery algorithms are out of
-scope.
 
 Impacts on address migration, NAT rebinding, and future multipath mechanisms of
 QUIC are not anticipated. However, the working group should document these
