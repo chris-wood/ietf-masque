@@ -18,7 +18,7 @@ and configure flows for different services.
 
 The primary goal of this working group is to develop mechanisms that allow
 configuring and concurrently running multiple proxied stream- and datagram-based
-flows inside a HTTP connection. The group will specify HTTP and/or HTTP/3
+flows inside an HTTP connection. The group will specify HTTP and/or HTTP/3
 extensions to enable this functionality. The group will focus on a limited set
 of client-initiated services: (1) UDP CONNECT and (2) IP proxying.
 
