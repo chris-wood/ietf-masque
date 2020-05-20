@@ -7,14 +7,14 @@ by hiding a client's IP address from a target server.
 Proxying technologies such as SOCKS and HTTP(S) CONNECT exist, albeit with their
 own shortcomings. For example, SOCKS signalling is not encrypted and HTTP
 CONNECT is currently limited to TCP. In contrast, HTTP/3 is a viable candidate
-protocol for proxying arbitrary traffic, as it provides to a single connection
-secure connectivity, multiplexed streams, and migration, while taking advantage
-of a unified congestion controller. An HTTP/3 datagram construct built on top of
-QUIC datagram frames would provide for unreliable data transmission and enable
-transporting UDP and other unreliable flows via a proxy. Moreover, it would not
-introduce potentially redundant or unnecessary recovery mechanisms.  Lastly,
-HTTP supports an established request/response semantic that can set up and
-configure flows for different services.
+protocol for proxying arbitrary traffic, as in a single connection it provides
+secure connectivity, multiplexed streams, migration, and a unified congestion
+controller. An HTTP/3 datagram construct built on top of QUIC datagram frames
+would provide for unreliable data transmission and enable transporting UDP and
+other unreliable flows via a proxy. Moreover, it would not introduce potentially
+redundant or unnecessary recovery mechanisms.  Lastly, HTTP supports an
+established request/response semantic that can set up and configure flows for
+different services.
 
 The primary goal of this working group is to develop mechanism(s) that allow
 configuring and concurrently running multiple proxied stream- and datagram-based
@@ -34,9 +34,9 @@ control and loss recovery algorithms are out of scope.
 
 Multicast UDP and multicast IP support are out of scope. However, the group may
 specify extension points that would enable future work on multicast. Specifying
-proxy server discovery mechanisms is also out of scope, but the group may
-specify identifiers and capability reports for proxy servers to aid future
-discovery mechanisms.
+proxy server discovery mechanisms is also out of scope. However, the group may
+consider features, such as proxy server identifiers, that aid future discovery
+mechanisms.
 
 Impacts on address migration, NAT rebinding, and future multipath mechanisms of
 QUIC are not anticipated. However, the working group should document these
