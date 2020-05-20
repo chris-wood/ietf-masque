@@ -35,7 +35,7 @@ control and loss recovery algorithms are out of scope.
 Multicast UDP and multicast IP support are out of scope. However, the group may
 specify extension points that would enable future work on multicast. Specifying
 proxy server discovery mechanisms is also out of scope, but the group may
-specify identifiers and capability reports for roxy servers to aid future
+specify identifiers and capability reports for proxy servers to aid future
 discovery mechanisms.
 
 Impacts on address migration, NAT rebinding, and future multipath mechanisms of
