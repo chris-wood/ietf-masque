@@ -14,7 +14,7 @@ would provide for unreliable data transmission and enable transporting UDP and
 other unreliable flows via a proxy. Moreover, it would not introduce potentially
 redundant or unnecessary recovery mechanisms.  Lastly, HTTP supports an
 established request/response semantic that can set up and configure flows for
-different services. This framework is called MASQUE.
+different services.
 
 The primary goal of this working group is to develop mechanism(s) that allow
 configuring and concurrently running multiple proxied stream- and datagram-based
